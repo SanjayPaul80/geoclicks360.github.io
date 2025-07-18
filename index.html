@@ -1,38 +1,59 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GeoClicks360</title>
 </head>
-<body style="margin:0; font-family: 'Segoe UI', Arial, sans-serif; background: linear-gradient(135deg, #f8ffae 0%, #43cea2 100%);">
+<body style="margin:0; font-family: 'Segoe UI', Arial, sans-serif; background: #f7f9fc;">
 
   <!-- Header -->
-  <header style="background: linear-gradient(90deg, #ff6a00 0%, #ee0979 100%); color: #fff; padding: 1.5em 0 1em 0;">
+  <header style="background: #185a9d; color: #fff; padding: 1.5em 0 1em 0;">
     <nav style="display: flex; justify-content: center;">
       <ul style="list-style: none; display: flex; gap: 2em; margin:0; padding:0;">
         <li><a href="#services" style="color:#fff; text-decoration:none; font-weight:bold; font-size:1.2em;">Services</a></li>
-        <li><a href="#testimonials" style="color:#fff; text-decoration:none; font-weight:bold; font-size:1.2em;">Testimonials</a></li>
-        <li><a href="#tours" style="color:#fff; text-decoration:none; font-weight:bold; font-size:1.2em;">Virtual Tours</a></li>
+        <li><a href="color:#fff; text-decoration:none; font-weight:bold; font-size:1.2em;">Virtual Tours</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section style="text-align: center; padding: 4em 1em 3em 1em; background: linear-gradient(120deg, #30cfd0 0%, #330867 100%); color: #fff;">
-    <h1 style="font-size: 2.5em; font-weight: bold; letter-spacing: 2px; margin: 0 0 0.5em 0;">Boost Your Local Business Visibility</h1>
-    <p style="font-size: 1.25em; margin-bottom: 1.5em;">Google Street View • Local SEO • 360° Virtual Tours</p>
-    <a href="#services" style="display: inline-block; padding: 1em 2.5em; background: #ff6a00; color: #fff; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 1.2em; box-shadow: 0 4px 16px #ee097966;">Get Started</a>
-  </section>
+<section style="text-align: center; padding: 4em 1em 3em 1em; background: #fff; color: #185a9d;">
+  <h1 style="font-size: 2.5em; font-weight: bold; letter-spacing: 2px; margin: 0 0 0.5em 0;">Boost Your Local Business Visibility</h1>
+  <p style="font-size: 1.25em; margin-bottom: 1.5em;">Google Street View • Local SEO • 360° Virtual Tours</p>
+  <a href="#services" style="display: inline-block; padding: 1em 2.5em; background: #185a9d; color: #fff; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 1.2em; box-shadow: 0 4px 16px #185a9d33; margin-right: 1em;">Get Started</a>
+  <a href="https://wa.me/917795524316" target="_blank" style="display: inline-block; padding: 1em 2.5em; background: #25D366; color: #fff; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 1.2em; box-shadow: 0 4px 16px #185a9d33;">Free Audit on WhatsApp</a>
+</section>
+
+<!-- Free Audit Modal -->
+<div id="auditModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(24,90,157,0.15); z-index:1000; justify-content:center; align-items:center;">
+  <div style="background:#fff; color:#185a9d; padding:2em; border-radius:12px; box-shadow:0 6px 32px #185a9d33; max-width:350px; text-align:center; position:relative;">
+    <button onclick="document.getElementById('auditModal').style.display='none'" style="position:absolute; top:0.6em; right:1em; background:none; border:none; font-size:1.5em; color:#185a9d; cursor:pointer;">&times;</button>
+    <h2 style="margin-bottom:0.5em;">Free Local SEO Audit</h2>
+    <p style="margin-bottom:1em;">Get a free audit of your business's Google presence. Enter your details and we'll reach out!</p>
+    <form action="mailto:your@email.com" method="POST" style="display:flex; flex-direction:column; gap:0.6em;">
+      <input type="text" name="name" placeholder="Your Name" required style="padding:0.7em; border:1px solid #185a9d; border-radius:6px; font-size:1em;">
+      <input type="email" name="email" placeholder="Your Email" required style="padding:0.7em; border:1px solid #185a9d; border-radius:6px; font-size:1em;">
+      <input type="text" name="business" placeholder="Business Name" required style="padding:0.7em; border:1px solid #185a9d; border-radius:6px; font-size:1em;">
+      <button type="submit" style="padding:0.7em; background:#185a9d; color:#fff; border:none; border-radius:6px; font-weight:bold; font-size:1em; cursor:pointer;">Request Audit</button>
+    </form>
+  </div>
+</div>
+
+<script>
+document.getElementById('ctaAudit').onclick = function() {
+  document.getElementById('auditModal').style.display = 'flex';
+}
+</script>
 
   <main>
     <!-- Services Section -->
-    <section id="services" style="padding: 2em 1em; background: #f9fbe7;">
-      <h2 style="color: #ee0979; font-size:2em; margin-bottom:0.5em;">🔧 Services</h2>
+    <section id="services" style="padding: 2em 1em; background: #f0f4fb;">
+      <h2 style="color: #185a9d; font-size:2em; margin-bottom:0.5em;">🔧 Services</h2>
       <ul style="max-width: 600px; margin: 1em auto; text-align:left; font-size:1.15em; color:#333;">
-        <li style="margin-bottom:0.4em;">360° Virtual Photoshoot <span style="color:#43cea2;">(Google Street View Trusted)</span></li>
+        <li style="margin-bottom:0.4em;">360° Virtual Photoshoot <span style="color:#185a9d;">(Google Street View Trusted)</span></li>
         <li style="margin-bottom:0.4em;">Google Business Profile Setup & Verification</li>
-        <li style="margin-bottom:0.4em;">Profile Optimization & <span style="color:#ff6a00;">Map Ranking Boost</span></li>
+        <li style="margin-bottom:0.4em;">Profile Optimization & <span style="color:#185a9d;">Map Ranking Boost</span></li>
         <li style="margin-bottom:0.4em;">Review Boosting Strategy & Training</li>
         <li style="margin-bottom:0.4em;">WhatsApp + Website Integration</li>
         <li style="margin-bottom:0.4em;">Monthly Offers & Content Posting</li>
@@ -40,52 +61,52 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" style="background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%); padding:2em 1em;">
+    <section id="testimonials" style="background: #185a9d; padding:2em 1em;">
       <h2 style="color: #fff; font-size:2em; margin-bottom:0.5em;">⭐ Testimonials</h2>
       <div style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: center;">
-        <div style="background: #fff; padding: 1.5em; border-radius: 8px; box-shadow: 0 4px 16px #185a9d44; max-width: 320px;">
+        <div style="background: #fff; padding: 1.5em; border-radius: 8px; box-shadow: 0 4px 16px #185a9d33; max-width: 320px;">
           <p style="color:#185a9d;">“Excellent service, our store now looks perfect on Google Maps!”</p>
-          <p style="font-style: italic; color: #ee0979;">– Local Store Owner</p>
+          <p style="font-style: italic; color: #185a9d;">– Local Store Owner</p>
         </div>
-        <div style="background: #fff; padding: 1.5em; border-radius: 8px; box-shadow: 0 4px 16px #185a9d44; max-width: 320px;">
+        <div style="background: #fff; padding: 1.5em; border-radius: 8px; box-shadow: 0 4px 16px #185a9d33; max-width: 320px;">
           <p style="color:#185a9d;">“Got more walk-in customers after the 360° tour was added.”</p>
-          <p style="font-style: italic; color: #ee0979;">– Restaurant Manager</p>
+          <p style="font-style: italic; color: #185a9d;">– Restaurant Manager</p>
         </div>
-        <div style="background: #fff; padding: 1.5em; border-radius: 8px; box-shadow: 0 4px 16px #185a9d44; max-width: 320px;">
+        <div style="background: #fff; padding: 1.5em; border-radius: 8px; box-shadow: 0 4px 16px #185a9d33; max-width: 320px;">
           <p style="color:#185a9d;">“Quick setup, professional team, highly recommended.”</p>
-          <p style="font-style: italic; color: #ee0979;">– Café Partner</p>
+          <p style="font-style: italic; color: #185a9d;">– Café Partner</p>
         </div>
       </div>
     </section>
 
     <!-- Virtual Tours & Maps Section -->
-    <section id="tours" style="padding:2em 1em; background:#fff3e0;">
-      <h2 style="color: #ff6a00; font-size:2em;">🌍 Virtual Tours & Maps</h2>
+    <section id="tours" style="padding:2em 1em; background:#fff;">
+      <h2 style="color: #185a9d; font-size:2em;">🌍 Virtual Tours & Maps</h2>
       <div style="display:flex; flex-wrap:wrap; gap:1em; justify-content:center;">
-        <iframe src="https://www.google.com/maps/d/embed?mid=19hZF9_swcUy3FXgnd_wsg6WfdN4keLE&ehbc=2E312F" class="map" style="width:350px; height:250px; border:0; box-shadow: 0 2px 12px #ff6a0044;" loading="lazy"></iframe>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1Bfgv9RzRxYnNIPAEP4o8l-cEyifbp3k&ehbc=2E312F" class="map" style="width:350px; height:250px; border:0; box-shadow: 0 2px 12px #ff6a0044;" loading="lazy"></iframe>
-        <iframe src="https://www.google.com/maps/embed?pb=!4v1751126866328!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ1Y3cGlKYmc.!2m2!1d13.14607855989636!2d77.56991140909241!3f100!4f0!5f0.4000000000000002" class="map" style="width:350px; height:250px; border:0; box-shadow: 0 2px 12px #ff6a0044;" loading="lazy"></iframe>
-        <iframe src="https://www.google.com/maps/embed?pb=!4v1751127032495!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJREZ4c21XdVFF!2m2!1d13.25279622268359!2d77.71579579198425!3f12.06970479489355!4f10.919448374596612!5f0.4000000000000002" class="map" style="width:350px; height:250px; border:0; box-shadow: 0 2px 12px #ff6a0044;" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/d/embed?mid=19hZF9_swcUy3FXgnd_wsg6WfdN4keLE&ehbc=2E312F" class="map" style="width:350px; height:250px; border:2px solid #185a9d; border-radius:8px; box-shadow: 0 2px 12px #185a9d22;" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1Bfgv9RzRxYnNIPAEP4o8l-cEyifbp3k&ehbc=2E312F" class="map" style="width:350px; height:250px; border:2px solid #185a9d; border-radius:8px; box-shadow: 0 2px 12px #185a9d22;" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1751126866328!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ1Y3cGlKYmc.!2m2!1d13.14607855989636!2d77.56991140909241!3f100!4f0!5f0.4000000000000002" class="map" style="width:350px; height:250px; border:2px solid #185a9d; border-radius:8px; box-shadow: 0 2px 12px #185a9d22;" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1751127032495!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJREZ4c21XdVFF!2m2!1d13.25279622268359!2d77.71579579198425!3f12.06970479489355!4f10.919448374596612!5f0.4000000000000002" class="map" style="width:350px; height:250px; border:2px solid #185a9d; border-radius:8px; box-shadow: 0 2px 12px #185a9d22;" loading="lazy"></iframe>
       </div>
     </section>
   </main>
 
   <!-- Quick Links Section -->
-  <section class="quick-links" style="padding:2em 1em; background: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);">
+  <section class="quick-links" style="padding:2em 1em; background: #f0f4fb;">
     <h2 style="color: #185a9d; font-size:2em;">🔗 Quick Links</h2>
     <ul style="max-width: 600px; margin: 1em auto; text-align:left; font-size:1.15em;">
-      <li><a href="https://pages.razorpay.com/stores/st_QjTdp5R6BxMsx6" target="_blank" style="color:#ee0979; font-weight:bold;">💳 Pay Online</a></li>
-      <li><a href="https://wa.me/917795524316" target="_blank" style="color:#43cea2; font-weight:bold;">📞 WhatsApp Us</a></li>
-      <li><a href="https://github.com/geoclicks360" target="_blank" style="color:#ff6a00; font-weight:bold;">🌐 Github</a></li>
-      <li><a href="https://www.linkedin.com/company/geoclicks360" target="_blank" style="color:#330867; font-weight:bold;">🔗 LinkedIn</a></li>
-      <li><a href="https://linktr.ee/geoclicks360" target="_blank" style="color:#30cfd0; font-weight:bold;">🌲 Linktree</a></li>
-      <li><a href="https://www.instagram.com/geoclicks360/" target="_blank" style="color:#ee0979; font-weight:bold;">📸 Instagram</a></li>
+      <li><a href="https://pages.razorpay.com/stores/st_QjTdp5R6BxMsx6" target="_blank" style="color:#185a9d; font-weight:bold;">💳 Pay Online</a></li>
+      <li><a href="https://wa.me/917795524316" target="_blank" style="color:#185a9d; font-weight:bold;">📞 WhatsApp Us</a></li>
+      <li><a href="https://github.com/geoclicks360" target="_blank" style="color:#185a9d; font-weight:bold;">🌐 Github</a></li>
+      <li><a href="https://www.linkedin.com/company/geoclicks360" target="_blank" style="color:#185a9d; font-weight:bold;">🔗 LinkedIn</a></li>
+      <li><a href="https://linktr.ee/geoclicks360" target="_blank" style="color:#185a9d; font-weight:bold;">🌲 Linktree</a></li>
+      <li><a href="https://www.instagram.com/geoclicks360/" target="_blank" style="color:#185a9d; font-weight:bold;">📸 Instagram</a></li>
       <li><a href="https://www.facebook.com/profile.php?id=61577975815327" target="_blank" style="color:#185a9d; font-weight:bold;">📘 Facebook</a></li>
-      <li><a href="https://x.com/GeoClicks360" target="_blank" style="color:#ff6a00; font-weight:bold;">🐦 X (Twitter)</a></li>
+      <li><a href="https://x.com/GeoClicks360" target="_blank" style="color:#185a9d; font-weight:bold;">🐦 X (Twitter)</a></li>
     </ul>
   </section>
 
-  <footer style="background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%); color: #fff; text-align: center; padding: 1em 0; font-size:1.1em;">
+  <footer style="background: #185a9d; color: #fff; text-align: center; padding: 1em 0; font-size:1.1em;">
     <p>&copy; 2025 GeoClicks360. All rights reserved.</p>
   </footer>
 </body>
